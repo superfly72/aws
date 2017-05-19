@@ -1,0 +1,13 @@
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Description" : "A simple stack that launches a Kinesis instance.",
+  "Resources" : {
+    "KinesisInstance" : {
+      "Type" : "AWS::Kinesis::Stream",
+      "Properties" : {
+        "Name" : "SimpleKinesisStream",
+        "ShardCount" : 4
+      }
+    }
+  }
+}
