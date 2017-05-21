@@ -25,17 +25,21 @@ public class KinesisController {
 
     private final Logger log = LoggerFactory.getLogger(KinesisController.class);
 
+    private final SBKinesisClient sbKinesisClient;
+
     @Autowired
-    public SBKinesisClient kinesisClient;
+    public KinesisController (SBKinesisClient c) {
+        this.sbKinesisClient = c;
+    }
 
     @RequestMapping(method=RequestMethod.POST)
     public @ResponseBody String publish(@RequestBody String payload) {
         byte[] bytes = payload.getBytes(Charset.defaultCharset());
         ByteBuffer buffer = ByteBuffer.wrap(bytes);
 
-        ListenableFuture<UserRecordResult> listenableFuture = kinesisClient.getKinesisProducer()
-                .addUserRecord(kinesisClient.STREAM_NAME,
-                        kinesisClient.PARTITION_KEY,
+        ListenableFuture<UserRecordResult> listenableFuture = sbKinesisClient.getKinesisProducer()
+                .addUserRecord(sbKinesisClient.getStreamName(),
+                        sbKinesisClient.getPartitionKey(),
                         Utils.randomExplicitHashKey(),
                         buffer);
 
