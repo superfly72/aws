@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.util.concurrent.atomic.AtomicLong;
@@ -27,24 +28,26 @@ public class KinesisController {
 
     private final SBKinesisClient sbKinesisClient;
 
+    private final ProducerConfig producerConfig;
+
     @Autowired
-    public KinesisController (SBKinesisClient c) {
+    public KinesisController (SBKinesisClient c, ProducerConfig p) {
         this.sbKinesisClient = c;
+        this.producerConfig = p;
     }
 
     @RequestMapping(method=RequestMethod.POST)
-    public @ResponseBody String publish(@RequestBody String payload) {
-        byte[] bytes = payload.getBytes(Charset.defaultCharset());
-        ByteBuffer buffer = ByteBuffer.wrap(bytes);
+    public @ResponseBody int publish(@RequestBody String payload) throws UnsupportedEncodingException {
 
+        ByteBuffer data = ByteBuffer.wrap(payload.getBytes("UTF-8"));
         ListenableFuture<UserRecordResult> listenableFuture = sbKinesisClient.getKinesisProducer()
-                .addUserRecord(sbKinesisClient.getStreamName(),
-                        sbKinesisClient.getPartitionKey(),
+                .addUserRecord(producerConfig.getStreamName(),
+                        producerConfig.getPartitionKey(),
                         Utils.randomExplicitHashKey(),
-                        buffer);
+                        data);
 
         Futures.addCallback(listenableFuture, callback);
-        return "yo";
+        return sbKinesisClient.getKinesisProducer().getOutstandingRecordsCount();
 
     }
 
