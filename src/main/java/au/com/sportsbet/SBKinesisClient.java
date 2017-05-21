@@ -19,6 +19,7 @@ public class SBKinesisClient {
     public int DATA_SIZE;
     public int SECONDS_TO_RUN;
     public int RECORDS_PER_SECOND;
+    public String PARTITION_KEY;
     public String STREAM_NAME;
     public String REGION;
     public int MAX_CONNECTIONS;
