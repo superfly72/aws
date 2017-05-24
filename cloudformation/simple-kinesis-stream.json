@@ -5,8 +5,8 @@
     "KinesisInstance" : {
       "Type" : "AWS::Kinesis::Stream",
       "Properties" : {
-        "Name" : "SimpleKinesisStream",
-        "ShardCount" : 4
+        "Name" : "test",
+        "ShardCount" : 1
       }
     }
   }

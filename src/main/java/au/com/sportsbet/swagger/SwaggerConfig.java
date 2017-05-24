@@ -1,4 +1,4 @@
-package au.com.sportsbet;
+package au.com.sportsbet.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
