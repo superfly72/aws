@@ -1,4 +1,4 @@
-package au.com.sportsbet.model;
+package au.com.demo.model;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;

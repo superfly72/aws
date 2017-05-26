@@ -1,24 +1,18 @@
-package au.com.sportsbet.controller;
+package au.com.demo.controller;
 
-import au.com.sportsbet.config.StreamConfig;
-import au.com.sportsbet.service.ConsumerService;
-import au.com.sportsbet.service.ProducerService;
+import au.com.demo.config.StreamConfig;
+import au.com.demo.service.ConsumerService;
+import au.com.demo.service.ProducerService;
 import com.amazonaws.services.kinesis.producer.Attempt;
 import com.amazonaws.services.kinesis.producer.UserRecordFailedException;
 import com.amazonaws.services.kinesis.producer.UserRecordResult;
 import com.google.common.collect.Iterables;
 import com.google.common.util.concurrent.FutureCallback;
-import com.google.common.util.concurrent.Futures;
-import com.google.common.util.concurrent.ListenableFuture;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StopWatch;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.UnsupportedEncodingException;
-import java.nio.ByteBuffer;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**

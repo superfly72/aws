@@ -1,6 +1,6 @@
-package au.com.sportsbet.model.log;
+package au.com.demo.model.log;
 
-import au.com.sportsbet.model.BaseModel;
+import au.com.demo.model.BaseModel;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

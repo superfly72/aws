@@ -1,4 +1,4 @@
-package au.com.sportsbet.model.tealium;
+package au.com.demo.model.tealium;
 
 import java.io.Serializable;
 import com.google.gson.annotations.Expose;

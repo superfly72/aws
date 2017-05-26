@@ -1,11 +1,10 @@
-package au.com.sportsbet.service;
+package au.com.demo.service;
 
 
-import au.com.sportsbet.config.ConsumerConfig;
-import au.com.sportsbet.config.SecurityConfig;
-import au.com.sportsbet.config.StreamConfig;
-import au.com.sportsbet.model.log.ApacheAccessLog;
-import au.com.sportsbet.model.tealium.IOSEvent;
+import au.com.demo.config.ConsumerConfig;
+import au.com.demo.config.SecurityConfig;
+import au.com.demo.config.StreamConfig;
+import au.com.demo.model.tealium.IOSEvent;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.services.kinesis.clientlibrary.interfaces.v2.IRecordProcessor;
 import com.amazonaws.services.kinesis.clientlibrary.interfaces.v2.IRecordProcessorFactory;

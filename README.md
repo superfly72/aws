@@ -1,4 +1,4 @@
-Sportsbet's AWS Kinesis Client Demo
+demo's AWS Kinesis Client Demo
 ===================================
 
 This is a sample Kinesis producer/consumer.

@@ -1,4 +1,4 @@
-package au.com.sportsbet;
+package au.com.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

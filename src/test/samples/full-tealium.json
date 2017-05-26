@@ -4,7 +4,7 @@
   },
   "events": [
     {
-      "account": "sportsbet",
+      "account": "demo",
       "profile": "main",
       "selector": "2",
       "env": "prod",
@@ -31,14 +31,14 @@
           "title": "Tealium Mobile Webview",
           "query_string": "platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
           "hash": "",
-          "url": "https://tags.tiqcdn.com/utag/sportsbet/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
-          "pathname": "/utag/sportsbet/ios-app/prod/mobile.html"
+          "url": "https://tags.tiqcdn.com/utag/demo/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
+          "pathname": "/utag/demo/ios-app/prod/mobile.html"
         },
         "udo": {
           "carrier_iso": "au",
           "_csubtotal": "",
           "is_customer": "1",
-          "ut.account": "sportsbet",
+          "ut.account": "demo",
           "app_version": "17.09",
           "lifecycle_totalwakecount": "883",
           "ut.event": "link",
@@ -55,7 +55,7 @@
           "timestamp_offset": "9",
           "_ccat": [],
           "lifecycle_dayssinceupdate": "0",
-          "app_id": "Sportsbet 17.09",
+          "app_id": "demo 17.09",
           "longitude": "138.559314",
           "sb_view_name": "/event",
           "_ccountry": "",
@@ -83,14 +83,14 @@
           "channel_platform": "ios-app",
           "lifecycle_wakecount": "4",
           "lifecycle_hourofday_local": "                                                                          16",
-          "sb_product_name": "sportsbet",
+          "sb_product_name": "demo",
           "latitude": "-35.019151",
           "origin": "mobile",
           "_cstate": "",
           "device_battery_percent": "41",
           "ut.profile": "ios-app",
           "platform": "iOS",
-          "app_rdns": "au.com.sportsbet.mdt",
+          "app_rdns": "au.com.demo.mdt",
           "_csku": [],
           "library_version": "4.1.11c",
           "page_id": "/The-Big-3-go-out-with-a-bang-3276284",
@@ -118,7 +118,7 @@
           "lifecycle_terminatecount": "0",
           "os_version": "9.1",
           "lifecycle_firstlaunchdate_mmddyyyy": "04/25/2016",
-          "app_name": "Sportsbet",
+          "app_name": "demo",
           "_ccity": "",
           "_cquan": [],
           "carrier": "OPTUS",
@@ -147,7 +147,7 @@
       "visitor_id": "01544b9f34660080f4254fa1634000082008d07a00432",
       "post_time": 1495694692000,
       "page_url": {
-        "full_url": "https://tags.tiqcdn.com/utag/sportsbet/ios-app/prod/mobile.html",
+        "full_url": "https://tags.tiqcdn.com/utag/demo/ios-app/prod/mobile.html",
         "query_params": {
           "library_version": "4.1.11c",
           "timestamp_unix": "1495684585",
@@ -157,10 +157,10 @@
         "querystring": "library_version=4.1.11c&timestamp_unix=1495684585&os_version=9.1&platfo                                                                                                                                                                                                                              rm=iOS",
         "scheme": "https",
         "domain": "tags.tiqcdn.com",
-        "path": "/utag/sportsbet/ios-app/prod/mobile.html"
+        "path": "/utag/demo/ios-app/prod/mobile.html"
       },
       "referrer_url": {
-        "full_url": "https://tags.tiqcdn.com/utag/sportsbet/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
+        "full_url": "https://tags.tiqcdn.com/utag/demo/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
         "query_params": {
           "platform": "iOS",
           "os_version": "9.1",
@@ -170,9 +170,9 @@
         "querystring": "platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
         "scheme": "https",
         "domain": "tags.tiqcdn.com",
-        "path": "/utag/sportsbet/ios-app/prod/mobile.html"
+        "path": "/utag/demo/ios-app/prod/mobile.html"
       },
-      "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 SportsbetIphoneNative",
+      "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 demoIphoneNative",
       "_dctrace": [
         "us-east-1_uconnect_i-06adbf2d14b67d116",
         "us-east-1_eventstream_processor_i-0bdd2ab326e8d0311"
@@ -184,7 +184,7 @@
   "_id": "3b8eb90d45928d85639205102c31f318d2526dce773b57ffb62b33292c637325",
   "shard_token": -1,
   "last_event": {
-    "account": "sportsbet",
+    "account": "demo",
     "profile": "main",
     "selector": "2",
     "env": "prod",
@@ -211,14 +211,14 @@
         "title": "Tealium Mobile Webview",
         "query_string": "platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
         "hash": "",
-        "url": "https://tags.tiqcdn.com/utag/sportsbet/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
-        "pathname": "/utag/sportsbet/ios-app/prod/mobile.html"
+        "url": "https://tags.tiqcdn.com/utag/demo/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
+        "pathname": "/utag/demo/ios-app/prod/mobile.html"
       },
       "udo": {
         "carrier_iso": "au",
         "_csubtotal": "",
         "is_customer": "1",
-        "ut.account": "sportsbet",
+        "ut.account": "demo",
         "app_version": "17.09",
         "lifecycle_totalwakecount": "883",
         "ut.event": "link",
@@ -235,7 +235,7 @@
         "timestamp_offset": "9",
         "_ccat": [],
         "lifecycle_day                                                                                                                                                                                                                              ssinceupdate": "0",
-        "app_id": "Sportsbet 17.09",
+        "app_id": "demo 17.09",
         "longitude": "138.559314",
         "sb_view_name": "/event",
         "_ccountry": "",
@@ -263,14 +263,14 @@
         "channel_platform": "ios-app",
         "lifecycle_wakecount": "4",
         "lifecycle_hourofday_local": "16",
-        "sb_product_name": "sportsbet",
+        "sb_product_name": "demo",
         "latitude": "-35.019151",
         "origin": "mobile",
         "_cstate": "",
         "device_battery_percent": "41",
         "ut.profile": "ios-app",
         "platform": "iOS",
-        "app_rdns": "au.com.sportsbet.mdt",
+        "app_rdns": "au.com.demo.mdt",
         "_csku": [],
         "library_version": "4.1.11c",
         "page_id": "/The-Big-3-go-out-with-a-bang-3276284",
@@ -298,7 +298,7 @@
         "lifecycle_terminatecount": "0",
         "os_version": "9.1",
         "lifecycle_firstlaunchdate_mmddyyyy": "04/25/2016",
-        "app_name": "Sportsbet",
+        "app_name": "demo",
         "_ccity": "",
         "_cquan": [],
         "carrier": "OPTUS",
@@ -327,7 +327,7 @@
     "visitor_id": "01544b9f34660080f4254fa1634000082008d07a00432",
     "post_time": 1495694692000,
     "page_url": {
-      "full_url": "https://tags.tiqcdn.com/utag/sportsbet/ios-app/prod/mobile.html",
+      "full_url": "https://tags.tiqcdn.com/utag/demo/ios-app/prod/mobile.html",
       "query_params": {
         "library_version": "4.1.11c",
         "timestamp_unix": "1495684585",
@@ -337,10 +337,10 @@
       "querystring": "library_version=4.1.11c&timestamp_unix=1495684585&os_version=9.1&platform=iOS",
       "scheme": "https",
       "domain": "tags.tiqcdn.com",
-      "path": "/utag/sportsbet/ios-app/prod/mobile.html"
+      "path": "/utag/demo/ios-app/prod/mobile.html"
     },
     "referrer_url": {
-      "full_url": "https://tags.tiqcdn.com/utag/sportsbet/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
+      "full_url": "https://tags.tiqcdn.com/utag/demo/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
       "query_params": {
         "platform": "iOS",
         "os_version": "9.1",
@@ -350,9 +350,9 @@
       "querystring": "platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585",
       "scheme": "https",
       "domain": "tags.tiqcdn.com",
-      "path": "/utag/sportsbet/ios-app/prod/mobile.html"
+      "path": "/utag/demo/ios-app/prod/mobile.html"
     },
-    "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 SportsbetIphoneNative",
+    "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 demoIphoneNative",
     "_dctrace": [
       "us-east-1_uconnect_i-06adbf2d14b67d116",
       "us-east-1_eventstream_processor_i-0bdd2ab326e8d0311"

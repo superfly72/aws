@@ -1,10 +1,8 @@
-package au.com.sportsbet.service;
+package au.com.demo.service;
 
 
-import au.com.sportsbet.config.ProducerConfig;
-import au.com.sportsbet.config.SecurityConfig;
-import au.com.sportsbet.controller.KinesisController;
-import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
+import au.com.demo.config.ProducerConfig;
+import au.com.demo.config.SecurityConfig;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.services.kinesis.producer.KinesisProducer;
 import com.amazonaws.services.kinesis.producer.KinesisProducerConfiguration;
@@ -15,13 +13,9 @@ import com.google.common.util.concurrent.ListenableFuture;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StopWatch;
 
-import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
-import java.util.concurrent.ExecutionException;
 
 /**
  * Created by royh on 19/05/2017.

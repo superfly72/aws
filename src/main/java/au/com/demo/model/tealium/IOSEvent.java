@@ -1,6 +1,6 @@
-package au.com.sportsbet.model.tealium;
+package au.com.demo.model.tealium;
 
-import au.com.sportsbet.model.BaseModel;
+import au.com.demo.model.BaseModel;
 import com.google.gson.Gson;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

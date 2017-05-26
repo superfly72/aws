@@ -1,7 +1,7 @@
-package au.com.sportsbet.model;
+package au.com.demo.model;
 
-import au.com.sportsbet.model.log.ApacheAccessLog;
-import au.com.sportsbet.model.tealium.IOSEvent;
+import au.com.demo.model.log.ApacheAccessLog;
+import au.com.demo.model.tealium.IOSEvent;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -51,7 +51,7 @@ public class ModelConvertorTest {
                 "  },\n" +
                 "  'events': [\n" +
                 "    {\n" +
-                "      'account': 'sportsbet',\n" +
+                "      'account': 'demo',\n" +
                 "      'profile': 'main',\n" +
                 "      'selector': '2',\n" +
                 "      'env': 'prod',\n" +
@@ -63,15 +63,15 @@ public class ModelConvertorTest {
                 "          'domain': 'tags.tiqcdn.com',\n" +
                 "          'title': 'Tealium Mobile Webview',\n" +
                 "          'query_string': 'platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585',\n" +
-                "          'url': 'https://tags.tiqcdn.com/utag/sportsbet/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585',\n" +
-                "          'pathname': '/utag/sportsbet/ios-app/prod/mobile.html'\n" +
+                "          'url': 'https://tags.tiqcdn.com/utag/demo/ios-app/prod/mobile.html?platform=iOS&os_version=9.1&library_version=4.1.11c&timestamp_unix=1495684585',\n" +
+                "          'pathname': '/utag/demo/ios-app/prod/mobile.html'\n" +
                 "        },\n" +
                 "        'udo': {\n" +
                 "          'longitude': '138.559314',\n" +
                 "          'latitude': '-35.019151'\n" +
                 "        }\n" +
                 "      },\n" +
-                "      'useragent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 SportsbetIphoneNative',\n" +
+                "      'useragent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 demoIphoneNative',\n" +
                 "      'new_visitor': false\n" +
                 "    }\n" +
                 "  ]\n" +
