@@ -4,6 +4,8 @@ package au.com.sportsbet.service;
 import au.com.sportsbet.config.ConsumerConfig;
 import au.com.sportsbet.config.SecurityConfig;
 import au.com.sportsbet.config.StreamConfig;
+import au.com.sportsbet.model.log.ApacheAccessLog;
+import au.com.sportsbet.model.tealium.IOSEvent;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.services.kinesis.clientlibrary.interfaces.v2.IRecordProcessor;
 import com.amazonaws.services.kinesis.clientlibrary.interfaces.v2.IRecordProcessorFactory;
@@ -22,7 +24,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 
 import java.nio.ByteBuffer;
-import java.util.List;
 
 /**
  * Created by royh on 23/05/2017.
@@ -106,8 +107,10 @@ public class ConsumerService  implements IRecordProcessorFactory{
                 // that we will simply discard.
                 try {
                     ByteBuffer bb = r.getData();
-                    String data = new String(bb.array());
-                    log.info("Record data: {}", data);
+                    String json = new String(bb.array(), "UTF-8");
+                    IOSEvent iosEvent = new IOSEvent().fromJson(json);
+                    iosEvent.setSequenceNumber(r.getSequenceNumber());
+                    log.info("Record data: {}", iosEvent.toString());
 
                 } catch (Exception e) {
                     log.error("Error parsing record", e);

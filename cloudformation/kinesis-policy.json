@@ -1,0 +1,32 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "kinesis: Get*"
+      ],
+      "Resource": [
+        "arn:aws:kinesis:ap-southeast-2:347520023118:stream/test"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "kinesis:ListStreams"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "kinesis:Put*"
+      ],
+      "Resource": [
+        "arn:aws:kinesis:ap-southeast-2:347520023118:stream/test"
+      ]
+    }
+  ]
+}

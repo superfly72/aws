@@ -89,7 +89,6 @@ public class KinesisController {
 
 
 
-
     final AtomicLong completed = new AtomicLong(0);
 
     final FutureCallback<UserRecordResult> callback = new FutureCallback<UserRecordResult>() {

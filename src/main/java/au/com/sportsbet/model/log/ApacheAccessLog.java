@@ -1,16 +1,20 @@
-package au.com.sportsbet.model;
+package au.com.sportsbet.model.log;
 
+import au.com.sportsbet.model.BaseModel;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
+import java.nio.ByteBuffer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * Created by royh on 24/05/2017.
  */
-public class ApacheAccessLog {
+public class ApacheAccessLog implements Serializable, BaseModel {
 
     private final static Logger log = LoggerFactory.getLogger(ApacheAccessLog.class);
 
@@ -24,7 +28,7 @@ public class ApacheAccessLog {
     private int responseCode;
     private long contentSize;
 
-    private ApacheAccessLog() {}
+    public ApacheAccessLog() {}
 
     public ApacheAccessLog(String ipAddress, String clientIdentd, String userID,
                             String dateTime, String method, String endpoint,
@@ -140,8 +144,19 @@ public class ApacheAccessLog {
         return gson.toJson(this);
     }
 
-    public static ApacheAccessLog fromJson(String json) {
+    public ApacheAccessLog fromJson(String json) {
         Gson gson = new Gson();
+        log.info ("fromJson: {}", json);
         return gson.fromJson(json, ApacheAccessLog.class);
+    }
+
+    public ByteBuffer toByteBuffer() throws UnsupportedEncodingException {
+        return ByteBuffer.wrap(this.toJson().getBytes("UTF-8"));
+    }
+
+    public static ApacheAccessLog convertRawLogToObject (ByteBuffer bb) throws UnsupportedEncodingException {
+        String rawLog = new String(bb.array(), "UTF-8");
+        log.info ("convertRawLogToObject raw: {}", rawLog);
+        return ApacheAccessLog.parseFromLogLine(rawLog);
     }
 }
